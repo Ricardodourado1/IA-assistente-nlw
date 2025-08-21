@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/background-galaxy.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
+  background-color: #121214;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  line-height: 160%;
+}
+
+header {
+  padding-top: 2rem;
+  text-align: center;
+  > img {
+    width: 15em;
+  }
+}
+
+main {
+  max-width: 36rem;
+  margin: 3rem auto;
+  width: 90%;
+}
+
+section {
+  border-radius: 0.625rem;
+  padding-top: 4px;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50%,
+    #e2d45c 100%
+  );
+  > div {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2a2634;
+  }
+
+  p {
+    letter-spacing: -0.18px;
+    color: #ffffff;
+  }
+
+  h2 {
+    letter-spacing: -0.47px;
+  }
+}
+
+/* Animation */
+main > section {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: appear 700ms forwards;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+input,
+select {
+  all: unset;
+  border: 2px solid #9147ff;
+  border-radius: 0.5rem;
+  padding: 0.675rem;
+  font-size: 0.875rem;
+  background-color: #00000066;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50%,
+    #e2d45c 100%
+  );
+  padding: 0.675rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  transition: none;
+  color: black;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.6;
+  }
+}
