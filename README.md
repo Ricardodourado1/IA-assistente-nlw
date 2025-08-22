@@ -18,7 +18,7 @@ Este projeto é um assistente de meta para jogos, desenvolvido durante a NLW. El
 ## Como Usar
 
 1. Clone o repositório e abra o projeto em seu navegador.
-2. Insira sua API KEY da Gemini (um valor padrão já está preenchido para testes).
+2. Insira sua API KEY da Gemini.
 3. Selecione o jogo desejado.
 4. Digite sua pergunta (ex: "Melhor build para Garen").
 5. Clique em "Perguntar" e aguarde a resposta da IA.
