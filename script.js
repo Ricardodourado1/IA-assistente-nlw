@@ -5,9 +5,6 @@ const askButton = document.getElementById("askButton");
 const form = document.getElementById("form");
 const aiResponse = document.getElementById("aiResponse");
 
-const DEFAULT_API_KEY = "AIzaSyBfsrIaWO9Zty84PgSVDll68k2uqJN0UwU";
-apiKeyInput.value = DEFAULT_API_KEY;
-
 const markdownToHtml = (text) => {
   const converter = new showdown.Converter();
   return converter.makeHtml(text);
